@@ -36,7 +36,7 @@ public class CandidateEntity {
             message = "the [password] field must be at least 8 characters long"
     )
     @Length(
-            max = 25,
+            max = 255,
             message = "the [password] field must be less than 25 characters long"
     )
     private String password;
