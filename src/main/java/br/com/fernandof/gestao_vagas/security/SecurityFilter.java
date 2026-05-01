@@ -31,6 +31,7 @@ public class SecurityFilter extends OncePerRequestFilter {
 
             if (subjectToken.isEmpty()) {
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                System.out.println("token is empty");
                 return;
             }
 

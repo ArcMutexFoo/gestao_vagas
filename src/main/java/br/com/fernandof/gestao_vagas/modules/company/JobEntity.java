@@ -21,7 +21,9 @@ public class JobEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+    @Column(columnDefinition = "TEXT")
     private String description;
+    @Column(columnDefinition = "TEXT")
     private String benefits;
     // possibly an enum
     private String level;
